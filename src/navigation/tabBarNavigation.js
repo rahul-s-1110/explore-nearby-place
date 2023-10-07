@@ -3,7 +3,8 @@ import Home from "../screens/home";
 import Fev from "../screens/fev";
 import Profile from "../screens/profile";
 import Search from "../screens/search";
-import { Entypo,MaterialIcons,EvilIcons,FontAwesome,Feather    } from "@expo/vector-icons";
+import { Entypo,MaterialIcons,EvilIcons,FontAwesome,Feather,AntDesign    } from "@expo/vector-icons";
+import { colors } from "../globalConstant/colors";
 
 const Tab = createBottomTabNavigator();
 const TabNavigtion = () => {
@@ -17,9 +18,9 @@ const TabNavigtion = () => {
           headerShown:false,
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <Entypo name="home" size={24} color={"black"} />
+              <Entypo name="home" size={24} color={colors.darkBlack} />
             ) : (
-              <Entypo name="home" size={24} color={"black"} />
+                <AntDesign name="home" size={24} color={colors.darkBlack} />
             ),
         }}
       />
@@ -29,33 +30,33 @@ const TabNavigtion = () => {
         headerShown:false,
         tabBarIcon: ({ focused }) =>
           focused ? (
-            <MaterialIcons name="favorite" size={24} color="black" />
+            <MaterialIcons name="favorite" size={24} color={colors.darkBlack} />
           ) : (
-            <MaterialIcons name="favorite-border" size={24} color="black" />
+            <MaterialIcons name="favorite-border" size={24} color={colors.darkBlack} />
           ),
       }}
       />
       <Tab.Screen name="profile" component={Profile}
       options={{
-        tabBarLabel: "profile",
+        tabBarLabel: "Profile",
         headerShown:false,
         tabBarIcon: ({ focused }) =>
           focused ? (
-            <FontAwesome name="user" size={24} color="black" />
+            <FontAwesome name="user" size={24} color={colors.darkBlack} />
           ) : (
-            <EvilIcons name="user" size={24} color="black" />
+            <EvilIcons name="user" size={24} color={colors.darkBlack} />
           ),
       }}
       />
       <Tab.Screen name="search" component={Search}
       options={{
-        tabBarLabel: "profile",
+        tabBarLabel: "Search",
         headerShown:false,
         tabBarIcon: ({ focused }) =>
           focused ? (
-            <FontAwesome name="search" size={24} color="black" />
+            <FontAwesome name="search" size={24} color={colors.darkBlack} />
           ) : (
-            <Feather name="search" size={24} color="black" />
+            <Feather name="search" size={24} color={colors.darkBlack} />
           ),
       }}
       />
