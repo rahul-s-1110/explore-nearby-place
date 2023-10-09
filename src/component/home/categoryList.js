@@ -39,7 +39,7 @@ const CategoryList = () => {
         data={categoryList}
         showsHorizontalScrollIndicator={false}
         renderItem={({ item, index }) => (
-          <TouchableOpacity onPress={()=>console.log("item and index",item,index)}>
+          <TouchableOpacity >
             <CategoryItem category={item} />
           </TouchableOpacity>
         )}
