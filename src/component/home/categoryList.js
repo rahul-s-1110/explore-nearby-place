@@ -29,18 +29,18 @@ const CategoryList = () => {
       value: "cafe",
       icon: Images.cafe,
     },
-    {
-      id: 4,
-      name: "Resturants",
-      value: "resturants",
-      icon: Images.food,
-    },
-    {
-      id: 5,
-      name: "Cafe",
-      value: "cafe",
-      icon: Images.cafe,
-    },
+    // {
+    //   id: 4,
+    //   name: "Resturants",
+    //   value: "resturants",
+    //   icon: Images.food,
+    // },
+    // {
+    //   id: 5,
+    //   name: "Cafe",
+    //   value: "cafe",
+    //   icon: Images.cafe,
+    // },
   ];
 
   return (
