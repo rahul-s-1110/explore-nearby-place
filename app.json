@@ -21,8 +21,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "package":"com.rahul.findPlace"
-      }
+        "package":"com.rahul.findPlace"      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
